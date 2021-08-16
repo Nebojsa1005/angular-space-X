@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Mission name: {{ mission.mission_name }}</h2>
+    <h4>Mission ID: {{ mission.mission_id }}</h4>
+    <p>Manufacturers:</p>
+    <ul>
+        <li *ngFor="let man of mission.manufacturers">{{man}}</li>
+    </ul>
+    <p>Payload:</p>
+    <ul>
+        <li *ngFor="let ids of mission.payload_ids">{{ids}}</li>
+    </ul>
+    <div class="links">
+        <a [href]="mission.wikipedia">Wikipedia</a>
+        <a [href]="mission.website">Website</a>
+        <a [href]="mission.twitter">Twitter</a>
+    </div>
+    <p>{{ mission.description }}</p>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+    <h3>{{ mission.mission_name }} - {{ mission.mission_id }}</h3>
+    <p>{{ mission.description }}</p>
+    <div class="links">
+        <a [href]="mission.wikipedia">Wikipedia</a>
+        <a [href]="mission.website">Website</a>
+        <a [routerLink]="['/', mission.mission_id]">See the mission</a>
+    </div>
+</div>

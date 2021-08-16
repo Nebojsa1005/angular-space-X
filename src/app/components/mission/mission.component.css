@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    align-self: center;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
